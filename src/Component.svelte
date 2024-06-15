@@ -122,6 +122,7 @@
                     return dataProvider?.rows;
                 }
             case 'query':
+                console.log("keyword: ", keyword)
                 if (searchEvent) {
                     searchEvent({keyword});
                 }

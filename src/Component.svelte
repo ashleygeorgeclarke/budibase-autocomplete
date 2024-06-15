@@ -116,6 +116,7 @@
     });
 
     async function getItems(keyword: string) {
+        console.log("getItems", keyword)
         switch (dataSourceType) {
             case 'budibase':
                 if (!searchEvent) {

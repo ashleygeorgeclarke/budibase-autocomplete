@@ -163,7 +163,7 @@
           {label || ' '}
         </label>
         <div class='spectrum-Form-itemField'>
-            <AutoComplete cleanUserText="false" inputId={fieldState?.fieldId} className="autocomplete-width" searchFunction="{getItems}" bind:selectedItem bind:text {placeholder} {labelFieldName} {valueFieldName} onChange="{changeHandler}" {delay} />
+            <AutoComplete cleanUserText={false} inputId={fieldState?.fieldId} className="autocomplete-width" searchFunction="{getItems}" bind:selectedItem bind:text {placeholder} {labelFieldName} {valueFieldName} onChange="{changeHandler}" {delay} />
         </div>
         {#if fieldState?.error}
             <div class='error'>{fieldState.error}</div>
